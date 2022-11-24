@@ -1,0 +1,58 @@
+# My Variables
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzdmNWIzOTUzOTQyYTJiODJjYzRhM2MiLCJpYXQiOjE2NjkyOTIyMzUsImV4cCI6MTY2OTU1MTQzNX0.waEOPqcRdK_uiFjX46DGLNOKtTlgNexOQU68dz4b11c
+
+
+### login
+POST https://backend-auth-8x9x.onrender.com/api/user/login
+Content-Type: application/json
+
+{
+    "email": "mirja@mirja.fi",
+    "password": "45RFgh##@$"
+}
+### login
+POST http://backend-auth-8x9x.onrender.com/api/user/login
+Content-Type: application/json
+
+{
+    "email": "mohsn12f@yahoo.fi",
+    "password": "Pa$w00rd#"
+}
+
+
+### POST Request
+POST http://backend-auth-8x9x.onrender.com/api/workouts/
+Content-Type: application/json
+Authorization: bearer {{token}}
+
+{
+    "title":"Abaas",
+    "reps":60,
+    "load":1
+}
+
+### POST Request
+POST http://backend-auth-8x9x.onrender.com/api/workouts/
+Content-Type: application/json
+Authorization: bearer {{token}}
+
+{
+    "title":"Islam",
+    "reps":60,
+    "load":1
+}
+
+### GET Request
+GET http://backend-auth-8x9x.onrender.com/api/workouts
+Content-Type: application/json
+Authorization: bearer {{token}}
+
+### GET Request
+GET http://backend-auth-8x9x.onrender.com/api/workouts
+Content-Type: application/json
+Authorization: bearer {{token}}
+
+### DELET Request
+DELETE  http://backend-auth-8x9x.onrender.com/api/workouts/637f6147b4d73c9844106904
+Content-Type: {{contentType}}
+Authorization: bearer {{token}}
